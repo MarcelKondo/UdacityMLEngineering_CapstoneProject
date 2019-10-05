@@ -6,10 +6,10 @@ October 5th, 2019
 ## Proposal
 
 ### Domain Background
-  With the appearence of AI and machine learning agents such as DeepMind's AlphaGo and OpenAI Five, one new terrain of exploration with a great potential for application has been set: that of competitive gaming. As one of the fastest growing industries in present years, 
+  As one of the fastest growing industries in present years, the gaming scenario has seen a surge of interest almost never seen before, with worldwide competitions taking place in gigantic stadiums, crouds comparable to those of football matches, and viewers in massive quantities not only physically but also virtually through webstreams throughout the whole world. With audiences as massives as those, the ability to provide in-game statistics, and further commentaries on what they represent for the performance of the team or player, is an important aspect to develop. However, with games getting more and more complicated, with mechanics that involve increasingly more detailed information, this task has become quite difficult to be done by human commentators all by themselves - and therein lies a possible application for machine learning methods to aid them.
 
 ### Problem Statement
-  The problem which I want to tackle is the Kaggle competition "PUBG Finish Placement Prediction", in which we have to try and predict the final placement of numerous players in one round of the famous FPS title "Player Unknown's Battle Ground", by analising data 
+  The problem which this project is aimed at tackling is the Kaggle competition "PUBG Finish Placement Prediction", in which we have to try and predict the final placement of numerous players in one round of the famous FPS title "Player Unknown's Battle Ground", by analising data 
 realated to their score throughout one round (such as kill count, assists, damage dealt, etc). 
 
   As we have at our disposal a collection of over 65000 games' worth of anonymized player data, consisting of their score data + their final placement, this problem is a well suited application for supervized learning algorithms, and I plan to test and compare the performance of 3 different algorithms (described in the Solution Statement) in that category.
