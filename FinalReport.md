@@ -1,30 +1,30 @@
 # Machine Learning Engineer Nanodegree
 ## Capstone Project
-Joe Udacity  
-December 31st, 2050
+Marcel Makoto Kondo 
+October 9th, 2019
 
 ## I. Definition
-_(approx. 1-2 pages)_
 
 ### Project Overview
-In this section, look to provide a high-level overview of the project in layman’s terms. Questions to ask yourself when writing this section:
-- _Has an overview of the project been provided, such as the problem domain, project origin, and related datasets or input data?_
-- _Has enough background information been given so that an uninformed reader would understand the problem domain and following problem statement?_
+As one of the fastest growing industries in present years, the gaming scenario has seen a surge of interest almost never seen before, with worldwide competitions taking place in gigantic stadiums, crouds comparable to those of football matches, and viewers in massive quantities not only physically but also virtually through webstreams throughout the whole world. With audiences as massives as those, the ability to provide in-game statistics, and further commentaries on what they represent for the performance of the team or player, is an important aspect to develop. However, with games getting more and more complicated, with mechanics that involve increasingly more detailed information, this task has become quite difficult to be done by human commentators all by themselves - and therein lies a possible application for machine learning methods to aid them.
 
 ### Problem Statement
-In this section, you will want to clearly define the problem that you are trying to solve, including the strategy (outline of tasks) you will use to achieve the desired solution. You should also thoroughly discuss what the intended solution will be for this problem. Questions to ask yourself when writing this section:
-- _Is the problem statement clearly defined? Will the reader understand what you are expecting to solve?_
-- _Have you thoroughly discussed how you will attempt to solve the problem?_
-- _Is an anticipated solution clearly defined? Will the reader understand what results you are looking for?_
+The problem which this project is aimed at tackling is the Kaggle competition "PUBG Finish Placement Prediction", in which we have to try and predict the final placement of numerous players in one round of the famous FPS title "Player Unknown's Battle Ground", by analising data 
+realated to their score throughout one round (such as kill count, assists, damage dealt, etc). 
+
+  As we have at our disposal a collection of over 65000 games' worth of anonymized player data, consisting of their score data + their final placement, this problem is a well suited application for supervized learning algorithms, and I plan to test and compare the performance of 3 different algorithms (described in the Solution Statement) in that category.
+  
+  The link to the kaggle competition can be found bellow:
+  https://www.kaggle.com/c/pubg-finish-placement-prediction/overview
+
 
 ### Metrics
-In this section, you will need to clearly define the metrics or calculations you will use to measure performance of a model or result in your project. These calculations and metrics should be justified based on the characteristics of the problem and problem domain. Questions to ask yourself when writing this section:
-- _Are the metrics you’ve chosen to measure the performance of your models clearly discussed and defined?_
-- _Have you provided reasonable justification for the metrics chosen based on the problem and solution?_
+The metric to be used to evaluate the performance of the algorithms is the one defined by the competition rules: Mean Absolute Error (MAE).
+
+MAE score is defined as the mean of the absolute value of the real minus predicted values of each row in the validation/test data sets: 1/n sum(abs(each_predicted_y-each_real_y))) The advantage of MAE (other than being a contest requirment) is that it provides a simple measurement of the error of a prediction that disregards the sign of the error and doesn't over-emphasize outliers.
 
 
 ## II. Analysis
-_(approx. 2-4 pages)_
 
 ### Data Exploration
 In this section, you will be expected to analyze the data you are using for the problem. This data can either be in the form of a dataset (or datasets), input data (or input files), or even an environment. The type of data should be thoroughly described and, if possible, have basic statistics and information presented (such as discussion of input features or defining characteristics about the input or environment). Any abnormalities or interesting qualities about the data that may need to be addressed have been identified (such as features that need to be transformed or the possibility of outliers). Questions to ask yourself when writing this section:
